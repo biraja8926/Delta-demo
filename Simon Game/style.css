@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    background: radial-gradient(circle at top, #fdf7e9 0%, #b0c6dd 70%);
+    font-family: 'Courier New', Courier, monospace;
+    color: #222;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 220px));
+    grid-template-rows: repeat(2, minmax(140px, 220px));
+    gap: 32px;
+    padding: 28px;
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 30px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.18);
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fff;
+    border: 8px solid #2d2d2d;
+    border-radius: 24%;
+    cursor: pointer;
+    transition: transform 0.15s ease, filter 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+    box-shadow: inset 0 0 0 6px rgba(255, 255, 255, 0.12);
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.btn.pressed {
+    transform: scale(0.95);
+    filter: brightness(1.45);
+    box-shadow: 0 0 26px rgba(255, 255, 255, 0.65);
+}
+
+.pink {
+    background-color: #f99b45;
+}
+
+.skyblue {
+    background-color: #5bc0de;
+}
+
+.orange {
+    background-color: #f4b445;
+    color: #222;
+}
+
+.green {
+    background-color: #6ecf6e;
+}
+
+.flash {
+    filter: brightness(1.75);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.9);
+}
+
+.userflash {
+    transform: scale(1.04);
+}
+
+.gameover {
+    background-color: #d63031;
+}
+
+
+
